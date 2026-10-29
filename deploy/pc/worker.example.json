@@ -1,0 +1,11 @@
+{
+  "serverUrl": "http://<server-tailscale-name>:8787",
+  "token": "<pc-worker token из config/tokens.json на сервере>",
+  "projects": {
+    "of": "/home/user/Projects/obsidian-framework"
+  },
+  "opencodeBin": "opencode",
+  "piBin": "pi",
+  "timeoutMinutes": 120,
+  "remote": "origin"
+}

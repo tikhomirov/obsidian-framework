@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "default_cooldown_minutes": 300,
+  "roles": {
+    "worker": {
+      "opencode": ["<provider/model основной>", "<provider/model запасной>"],
+      "pi": ["<provider/model>"]
+    },
+    "planning": ["<provider/model>", "<provider/model запасной>"],
+    "improve": ["<provider/model>"],
+    "review": ["<provider/model>"],
+    "verify": ["<provider/model>"]
+  }
+}

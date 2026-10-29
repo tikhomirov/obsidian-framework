@@ -1,0 +1,8 @@
+{
+  "name": "@of/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": { "of-worker": "./dist/main.js" },
+  "dependencies": { "@of/core": "0.1.0" }
+}

@@ -1,0 +1,39 @@
+.of-board-root { padding: 8px; }
+.of-toolbar { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
+.of-board { display: flex; gap: 8px; overflow-x: auto; align-items: flex-start; }
+.of-column { min-width: 220px; max-width: 260px; background: var(--background-secondary); border-radius: 8px; padding: 6px; }
+.of-column.of-drop { outline: 2px dashed var(--interactive-accent); }
+.of-column-title { font-weight: 600; margin-bottom: 6px; }
+.of-card { background: var(--background-primary); border: 1px solid var(--background-modifier-border); border-radius: 6px; padding: 6px; margin-bottom: 6px; cursor: grab; }
+.of-card.of-archived { opacity: 0.55; }
+.of-card-id { font-size: var(--font-ui-smaller); color: var(--text-muted); }
+.of-card-title { margin: 2px 0 4px; }
+.of-badges { display: flex; flex-wrap: wrap; gap: 4px; }
+.of-badge { font-size: var(--font-ui-smaller); border-radius: 4px; padding: 0 4px; background: var(--background-modifier-hover); }
+.of-badge-waiting, .of-badge-paused { background: var(--color-yellow); color: var(--text-on-accent); }
+.of-badge-blocked { background: var(--color-red); color: var(--text-on-accent); }
+.of-badge-running { background: var(--color-green); color: var(--text-on-accent); }
+.of-badge-review { background: var(--color-purple); color: var(--text-on-accent); }
+.of-error, .of-settings-warn { color: var(--text-error); }
+.of-ind-ok { color: var(--color-green); }
+.of-ind-warn { color: var(--color-yellow); }
+.of-ind-bad { color: var(--color-red); }
+.of-ind-unknown { color: var(--text-muted); }
+.of-history table { width: 100%; font-size: var(--font-ui-smaller); }
+
+/* Р-035: models editor */
+.of-models-modal { width: min(900px, 95vw); }
+.of-models-path { color: var(--text-muted); font-size: var(--font-ui-smaller); margin-bottom: 6px; }
+.of-models-chain { margin: 10px 0; padding: 6px 8px; border: 1px solid var(--background-modifier-border); border-radius: 6px; }
+.of-models-chain h4 { margin: 0 0 6px; }
+.of-models-row { display: flex; align-items: center; gap: 6px; padding: 2px 0; }
+.of-models-mark { width: 1.6em; text-align: center; color: var(--text-accent); }
+.of-models-name { flex: 1; font-family: var(--font-monospace); }
+.of-models-status { font-size: var(--font-ui-smaller); }
+.of-models-ok { color: var(--text-success); }
+.of-models-limit { color: var(--text-warning); }
+.of-models-manual { color: var(--text-error); }
+.of-models-add { display: flex; gap: 6px; margin-top: 6px; }
+.of-models-add input { flex: 1; }
+.of-models-json { width: 100%; font-family: var(--font-monospace); }
+.of-models-cooldown input { width: 6em; }

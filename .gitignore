@@ -1,0 +1,23 @@
+node_modules/
+dist/
+coverage/
+reports/
+.stryker-tmp
+packages/worker/dist-bundle/
+*.tsbuildinfo
+packages/plugin/main.js
+
+# local secrets / runtime state — never commit
+.env
+*.env
+!.env.example
+deploy/server/config/*
+!deploy/server/config/*.example.json
+deploy/server/pi-home/
+data.json
+*.pem
+*.key
+id_ed25519*
+worker_ssh_key*
+deploy_key*
+known_hosts

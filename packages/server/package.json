@@ -1,0 +1,13 @@
+{
+  "name": "@of/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": { "of-server": "./dist/main.js" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "@of/core": "0.1.0",
+    "zod": "^3.25.76"
+  }
+}

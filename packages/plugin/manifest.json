@@ -1,0 +1,9 @@
+{
+  "id": "obsidian-framework",
+  "name": "Obsidian Framework",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Kanban board for the Obsidian Framework coordinator (AIF pipeline).",
+  "author": "Aleksei Tikhomirov",
+  "isDesktopOnly": true
+}

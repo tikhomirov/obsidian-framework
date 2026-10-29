@@ -1,0 +1,36 @@
+{
+  "name": "obsidian-framework",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Obsidian Framework: AIF methodology on top of an Obsidian vault",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "workspaces": [
+    "packages/core",
+    "packages/server",
+    "packages/worker",
+    "packages/plugin"
+  ],
+  "scripts": {
+    "build": "tsc -b && npm run build -w @of/plugin && npm run bundle:worker",
+    "typecheck": "tsc -b && tsc -p packages/core && tsc -p packages/server && tsc -p packages/worker && tsc -p packages/plugin",
+    "lint": "eslint --max-warnings 0 .",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "check": "npm run typecheck && npm run lint && npm run coverage",
+    "bundle:worker": "node packages/worker/bundle.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@types/node": "^22.18.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "eslint": "^9.39.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.0",
+    "vitest": "^3.2.4",
+    "esbuild": "^0.25.10"
+  }
+}

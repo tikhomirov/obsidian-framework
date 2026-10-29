@@ -1,0 +1,11 @@
+**/node_modules
+**/dist
+**/dist-bundle
+coverage
+reports
+.stryker-tmp
+**/*.tsbuildinfo
+packages/plugin/main.js
+deploy/server/config
+deploy/server/pi-home
+deploy/server/.env

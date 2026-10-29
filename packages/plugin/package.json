@@ -1,0 +1,13 @@
+{
+  "name": "@of/plugin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild.config.mjs"
+  },
+  "devDependencies": {
+    "@of/core": "0.1.0",
+    "obsidian": "^1.10.0"
+  }
+}
